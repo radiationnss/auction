@@ -3,7 +3,8 @@ import Home from '../views/HomeView.vue';
 import About from '../views/AboutView.vue';
 import Notices from '../views/NoticesView.vue';
 import Categories from '../views/CategoriesView.vue';
-
+import Auction from '../views/AboutView.vue';
+import SingleCategory from '../views/SingleCategory.vue';
 
 
 
@@ -27,6 +28,16 @@ const routes = [
             path: '/categories',
             name: 'categories',
             component: Categories
+        },
+        {
+            path: '/auction',
+            name: 'auction',
+            component: Auction
+        },
+        {
+            path: '/category/:category_id',
+            name: 'category',
+            component: SingleCategory
         }
     ];
 

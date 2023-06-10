@@ -18,7 +18,7 @@
                         <div class="onsale">
                             <span class="badge rounded-0">10hours</span>
                         </div>
-                        <img :src="product.imgsrc" alt="" class="img-fluid">
+                        <img :src="product.thumbNails" alt="" class="img-fluid">
                         <div class="cart-btn">
                             <button class="btn shadow-sm rounded-pill bg-white">start bidding</button>
                         </div>
@@ -28,7 +28,7 @@
                             {{ product.title }}
                         </div>
                         <div class="product-description">
-                            {{ product.body }}
+                            {{ product.description }}
                         </div>
                         <div class="product-price">
                             ${{ product.price }}
@@ -42,33 +42,14 @@
 
 <script>
 
-/*
-var cards = document.querySelectorAll('.product-box');
-
-[...cards].forEach((card)=>{
-    card.addEventListener('mouseover', function(){
-        card.classList.add('is-hover');
-    })
-    card.addEventListener('mouseleave', function(){
-        card.classList.remove('is-hover');
-    })
-})
-*/
-
 export default {
     name: 'cardC',
-    data() {
-        return {
-            hover:false,
-        }
-    },
     props: ['products']
 }
 
 </script>
 
 <style scoped>
-
 .container-fluid {
     background-color: #F5FAFE;
     align-content: center;

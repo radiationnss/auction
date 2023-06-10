@@ -16,7 +16,7 @@
                             <a href="#" class="text-decoration-none text-dark shadow-sm">U</a>
                         </div>
                         <div class="onsale">
-                            <span class="badge rounded-0">10hours</span>
+                            <span class="badge rounded-0">{{ product.datetime }}</span>
                         </div>
                         <img :src="product.thumbNails" alt="" class="img-fluid">
                         <div class="cart-btn">
@@ -87,7 +87,7 @@ export default {
     padding: 5px 14px;
     top: 0px;
     position: absolute;
-    translate: -177%;
+    translate: -85%;
 }
 
 .product-inner-box img {

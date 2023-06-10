@@ -5,7 +5,7 @@ import Notices from '../views/NoticesView.vue';
 import Categories from '../views/CategoriesView.vue';
 import Auction from '../views/AboutView.vue';
 import SingleCategory from '../views/SingleCategory.vue';
-
+import Product from '../views/ProductView.vue'
 
 
 const routes = [
@@ -38,6 +38,11 @@ const routes = [
             path: '/category/:category_id',
             name: 'category',
             component: SingleCategory
+        },
+        {
+            path: '/category/:category_id/:product_id',
+            name: 'product',
+            component: Product
         }
     ];
 

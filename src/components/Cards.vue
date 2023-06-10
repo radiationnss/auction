@@ -20,7 +20,7 @@
                         </div>
                         <img :src="product.thumbNails" alt="" class="img-fluid">
                         <div class="cart-btn">
-                            <button class="btn shadow-sm rounded-pill bg-white">start bidding</button>
+                            <router-link :to="product.get_absolute_url"><button class="btn shadow-sm rounded-pill bg-white">start bidding</button></router-link>
                         </div>
                     </div>
                     <div class="product-info mt-3">
